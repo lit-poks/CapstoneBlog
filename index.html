@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>ScriBBler</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body class="indexBody">
+    <div class="card container">
+        <div class="logo">
+            <h1 class="scribbler" style="color: deepskyblue;font-size:40px;"><b> ScriBBler</b></h1>
+            <h6 class="scribbler"><b>Explore, Imagine, Create</b></h6>
+        </div>
+        <img class="sideimg" src="./img/sideimg.png" />
+
+        <form id="signInForm" class="loginform" align="center">
+            <h4>Login to Get B'login</h4>
+            <p>To keep connected with us please login with your personal information by email address and password</p>
+            <ul class="list-group">
+                <li class="list-group-item active">
+                    <h6>UserName</h6>
+                    <input id="uname" type="text" class="form-control" placeholder="Enter Your UserName" required>
+                </li>
+                <li class="list-group-item">
+                    <h6>Password</h6>
+                    <input id="password" type="password" class="form-control" placeholder="Enter your password" required>
+                </li>
+            </ul>
+            <br>
+            <div class="checkbox">
+                <h6 class="remb"><input id="rememberMe" class="checkbox" type="checkbox"> Remember me</h6>
+            </div>
+
+            <br><br>
+            <input type="submit" class="btn btn-primary" value="Login Now"/>
+            <a href="./signup.html" type="button" class="btn btn-outline-success">Create Account</a>
+        </form>
+        
+
+    </div>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/signin.js"></script>
+</body>
+
+</html>

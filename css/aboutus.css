@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Satisfy Regular'), local('Satisfy-Regular'), url(Satisfy-Regular.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+.lightMode{
+    color: black;
+}
+.darkMode{
+    color: floralwhite;
+}
+
+.scribbler{
+    font-family: 'Satisfy', cursive;
+}
+
+
+.nav-item{
+    font-size: large;
+}
+
+.aboutUsBanner{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    height: 60vh;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px; 
+  }
+
+  .aboutUsSplits{
+      border-top: 0px;
+      border-left: solid 1px gray;
+      border-bottom: 0px;
+      border-right: solid 1px gray;
+
+  }
+
+  .wefour{
+      background-color: #5385c1;
+  }
+
+  @media screen and (max-width:540px){
+      .aboutUsSplits{
+        padding-top: 2vh;
+        border-top: solid 1px gray;
+        border-left: 0px;
+        border-bottom: solid 1px gray;
+        border-right: 0px;
+      }
+  }
+
+  .aboutPictures{
+      margin-left: 20%;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+  }

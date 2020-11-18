@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>
+            ScriBBler
+        </title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!--All Links here-->
+        <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+            <a class="navbar-brand" href="#">
+                <div class="scribbler">
+                    <h1 style="color: deepskyblue;font-size: 40px;"><b>ScriBBler</b></h1>
+                    <h6 class="lightMode"><b>Explore, Imagine, Create</b></h6>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContents">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse align-self-end" id="navbarContents">
+                <ul class=" mr-auto ml-3 navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><span class="fa fa-home fa-sm"></span> Home</a>
+                    </li>
+
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="./myposts.html"><span class="fa fa-newspaper-o fa-sm"></span> My Posts</a>
+                    </li>
+
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-sm"></span> About</a>
+                    </li>
+
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="./contactus.html"><span class="fa fa-address-book fa-sm"></span> ContactUS</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ml-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        <span class="fa fa-user"></span><span id="dropdownName">Account</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="./details.html">MyProfile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="logout">Logout</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="createModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content" id="content">
+                <div class="modal-header bg-warning">
+                    <h4 class="col-12 modal-title text-center">
+                        Create Post
+                        <button type="button" class="close" id="createclose" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="createForm">
+                        <div class="form-row">
+                            <label for="postTitle"><h3>Title</h3></label>
+                        </div>
+                        <div class="form-row">
+                            <input class="col-sm" type="text" name="postTitle" id="postTitle" placeholder="Title"/>
+                        </div>
+                        <div class="form-row">
+                            <label for="postBody" style="padding-top: 2%;"><h3>Body</h3></label>
+                        </div>
+                        <div class="form-row">
+                            <textarea class="col-sm" name="postBody" id="postBody" rows="12"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <input type="submit" class="btn btn-outline-warning btn-lg" id="postSubmit" value="Submit">
+                    <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="homeBackground container-fluid align-items-center justify-content-center">
+            <a class="btn btn-info homeButtons" role="button" href="./allposts.html">All Posts</a>
+            <a class="btn btn-info homeButtons ml-5" role="button" data-toggle="modal" data-target="#createModal">Create Posts</a>
+        </div>
+
+
+        <script src="./js/navbar.js"></script>
+        <script src="./js/home.js"></script>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>
