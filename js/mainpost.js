@@ -195,9 +195,6 @@ function editing(type){
             if(type=='edit'){
             alert("Successfully Edited");
             }
-            else if(type=='like'){
-                alert("likes changed");
-            }
             sessionStorage.title=datas.title;
             sessionStorage.body=datas.body;
             sessionStorage.likecount=parseInt(datas.likes);
